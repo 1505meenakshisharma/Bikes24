@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bikes24">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/app_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".admin_login" />
+        <activity android:name=".Login" />
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AutomobileDetails" />
+        <activity android:name=".customer" />
+        <activity android:name=".EmployeeDetails" />
+        <activity android:name=".Billing" />
+        <activity android:name=".ViewDetails" />
+        <activity android:name=".SalesDetails" />
+        <activity android:name=".Complaints" />
+        <activity android:name=".qrcodegenerate" />
+        <activity android:name=".EditAutomobiles" />
+        <activity android:name=".EditCustomers" />
+        <activity android:name=".EditEmployees" />
+        <activity android:name=".DisplayBill" />
+        <activity android:name=".ViewAutomobiles" />
+        <activity android:name=".ViewCustomers" />
+        <activity android:name=".ViewEmployees" />
+        <activity android:name=".ViewSales" />
+        <activity android:name=".ViewComplaints" />
+        <activity android:name=".EditSales" />
+        <activity android:name=".EditComplaints" />
+        <activity android:name=".ContactUs" />
+        <activity android:name=".VehicleDetails" />
+        <activity android:name=".newautomobile" />
+        <activity android:name=".usedautomobile" />
+        <activity android:name=".SalesDetailBannerForManager" />
+        <activity android:name=".AutomobileListForManager" />
+        <activity android:name=".SalesDetailForManager" />
+    </application>
+
+</manifest>

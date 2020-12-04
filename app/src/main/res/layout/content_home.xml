@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainpage"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.bikes24.Home"
+    tools:showIn="@layout/app_bar_home">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:fontFamily="serif-monospace"
+        android:text="Home Page"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="250dp"
+        android:layout_height="85dp"
+        android:layout_below="@+id/textView9"
+        android:layout_alignEnd="@+id/textView9"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="54dp"
+        android:onClick="automobiles"
+        app:srcCompat="@drawable/ic_motorcycle" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView7"
+        android:layout_alignTop="@+id/imageView7"
+        android:layout_marginEnd="45dp"
+        android:layout_marginTop="66dp"
+        android:onClick="automobiles"
+        android:text="automobile" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="250dp"
+        android:layout_height="85dp"
+        android:layout_alignStart="@+id/textView9"
+        android:layout_alignTop="@+id/imageView7"
+        android:layout_marginStart="24dp"
+        android:onClick="customers"
+        app:srcCompat="@drawable/ic_people" />
+
+    <Button
+        android:id="@+id/button4"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/button"
+        android:onClick="customers"
+        android:text="Customers" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="250dp"
+        android:layout_height="85dp"
+        android:layout_below="@+id/button"
+        android:layout_toStartOf="@+id/button4"
+        android:onClick="employees"
+        app:srcCompat="@drawable/ic_employeees" />
+
+    <Button
+        android:id="@+id/button5"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button"
+        android:layout_alignTop="@+id/imageView9"
+        android:layout_marginTop="74dp"
+        android:onClick="employees"
+        android:text="employees" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="250dp"
+        android:layout_height="85dp"
+        android:layout_alignStart="@+id/imageView8"
+        android:layout_alignTop="@+id/imageView9"
+        android:onClick="sales"
+        app:srcCompat="@drawable/ic_sales" />
+
+    <Button
+        android:id="@+id/button8"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button5"
+        android:layout_alignBottom="@+id/button5"
+        android:layout_alignStart="@+id/button4"
+        android:onClick="sales"
+        android:text="sales" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/button5"
+        android:layout_alignEnd="@+id/imageView9"
+        android:onClick="complaints"
+        app:srcCompat="@drawable/ic_complaints" />
+
+    <Button
+        android:id="@+id/button9"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button5"
+        android:layout_marginTop="67dp"
+        android:layout_toStartOf="@+id/imageView10"
+        android:onClick="complaints"
+        android:text="complaints" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="250dp"
+        android:layout_height="85dp"
+        android:layout_below="@+id/button5"
+        android:layout_toEndOf="@+id/button9"
+        android:onClick="billing"
+        app:srcCompat="@drawable/ic_billing" />
+
+    <Button
+        android:id="@+id/button10"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button9"
+        android:layout_alignBottom="@+id/button9"
+        android:layout_alignStart="@+id/button8"
+        android:onClick="billing"
+        android:text="Billing" />
+
+</RelativeLayout>

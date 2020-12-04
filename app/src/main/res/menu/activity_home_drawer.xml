@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Automobiles"
+            android:icon="@drawable/ic_motorcycle"
+            android:title="Automobiles" />
+        <item
+            android:id="@+id/nav_Customers"
+            android:icon="@drawable/ic_people"
+            android:title="Customers" />
+        <item
+            android:id="@+id/nav_Employees"
+            android:icon="@drawable/ic_employeees"
+            android:title="Employees" />
+        <item
+            android:id="@+id/nav_sales"
+            android:icon="@drawable/ic_sales"
+            android:title="Sales" />
+        <item
+            android:id="@+id/nav_Billing"
+            android:icon="@drawable/ic_billing"
+            android:title="Billing" />
+        <item
+            android:id="@+id/nav_Viewall"
+            android:icon="@drawable/ic_viewall"
+            android:title="Viewall" />
+        <item
+            android:id="@+id/nav_buy_automobiles"
+            android:icon="@drawable/ic_buy_automobiles"
+            android:title="Buy New / Used Automobiles" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_Complaints"
+                android:icon="@drawable/ic_complaints"
+                android:title="Complaints" />
+            <item
+                android:id="@+id/nav_Generate"
+                android:icon="@drawable/ic_genarate"
+                android:title="Generate Bill" />
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Feedback" />
+	    <item
+                android:id="@+id/nav_contact_us"
+                android:icon="@drawable/ic_contact_us"
+                android:title="Contact Us" />
+        </menu>
+    </item>
+
+</menu>

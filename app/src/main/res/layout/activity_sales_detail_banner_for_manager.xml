@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainpage"
+    tools:context="com.example.bikes24.SalesDetailBannerForManager">
+
+    <ImageView
+        android:id="@+id/sales_image"
+        android:layout_width="330dp"
+        android:layout_height="361dp"
+        android:layout_marginTop="-50dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/sales" />
+
+    <Button
+        android:layout_width="317dp"
+        android:layout_height="104dp"
+        android:layout_below="@+id/sales_image"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginRight="46dp"
+        android:background="@drawable/sign"
+        android:onClick="sales_check"
+        android:text="Check Sales Detail"
+        android:textAllCaps="true"
+        android:textSize="24sp" />
+</RelativeLayout>

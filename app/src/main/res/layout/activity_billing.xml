@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainpage"
+    tools:context="com.example.bikes24.Billing">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Billing"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Sales ID"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText"
+        android:layout_alignTop="@+id/textView178"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editText88"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText97"
+        android:layout_below="@+id/editText97"
+        android:ems="10"
+        android:hint="Taxes/other"
+        android:inputType="number"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editText89"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText88"
+        android:layout_below="@+id/editText88"
+        android:ems="10"
+        android:hint="Total Amount"
+        android:inputType="number"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView178"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_toStartOf="@+id/editText2"
+        android:text="CustName:" />
+
+    <Button
+        android:id="@+id/button91"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/editText89"
+        android:layout_below="@+id/editText89"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/automobile"
+        android:onClick="add"
+        android:text="add bill details"
+        android:textColor="@android:color/background_light"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/button92"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/editText89"
+        android:layout_alignTop="@+id/button91"
+        android:background="@drawable/automobile"
+        android:onClick="cancel"
+        android:text="cancel"
+        android:textColor="@android:color/background_light"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/editText90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_below="@+id/editText2"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editText91"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText95"
+        android:layout_below="@+id/editText95"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editText92"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText91"
+        android:layout_below="@+id/editText91"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView184"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_toStartOf="@+id/editText90"
+        android:text="Address:" />
+
+    <TextView
+        android:id="@+id/textView185"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText90"
+        android:layout_toStartOf="@+id/editText90"
+        android:text="Phone:" />
+
+    <EditText
+        android:id="@+id/editText95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText90"
+        android:layout_toEndOf="@+id/textView185"
+        android:ems="10"
+        android:inputType="phone"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView187"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView178"
+        android:layout_below="@+id/editText95"
+        android:text="ModelName:" />
+
+    <TextView
+        android:id="@+id/textView191"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText91"
+        android:layout_toStartOf="@+id/editText92"
+        android:text="Price:" />
+
+    <TextView
+        android:id="@+id/textView192"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText92"
+        android:layout_toStartOf="@+id/editText92"
+        android:text="SalesDate:" />
+
+    <EditText
+        android:id="@+id/editText97"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText92"
+        android:layout_toEndOf="@+id/textView192"
+        android:ems="10"
+        android:inputType="date"
+        android:textAlignment="center" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editText"
+        android:layout_toEndOf="@+id/editText"
+        android:background="@drawable/adminn"
+        android:onClick="search"
+        app:srcCompat="@drawable/ic_search_black" />
+
+    <Button
+        android:id="@+id/button28"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless.Small"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignBaseline="@+id/editText89"
+        android:layout_alignBottom="@+id/editText89"
+        android:layout_toEndOf="@+id/textView187"
+        android:background="@drawable/ic_add_black"
+        android:onClick="sum"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/button22"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/button91"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/automobile"
+        android:onClick="print"
+        android:text="Print Bill"
+        android:textColor="@android:color/background_light"
+        android:textSize="12sp" />
+
+</RelativeLayout>

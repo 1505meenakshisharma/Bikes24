@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainpage"
+    tools:context="com.example.bikes24.ContactUs">
+
+    <TextView
+        android:id="@+id/textView176"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:fontFamily="serif"
+        android:text="Contact Info"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView177"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView176"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="26dp"
+        android:layout_toStartOf="@+id/textView176"
+        android:text="Phonenumber:"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView179"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView177"
+        android:layout_toEndOf="@+id/textView177"
+        android:text="+91 9472679634"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView180"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView179"
+        android:layout_toEndOf="@+id/textView177"
+        android:text="+91 9738301801"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView181"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView177"
+        android:layout_below="@+id/textView180"
+        android:layout_marginTop="26dp"
+        android:text="Email Us:"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView182"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView180"
+        android:layout_alignTop="@+id/textView181"
+        android:text="sarrafshubham40@gmail.com"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView183"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView182"
+        android:layout_alignStart="@+id/textView182"
+        android:text="sharmameenakshi66@gmail.com"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView184"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView182"
+        android:layout_alignStart="@+id/textView182"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+        android:text="amruta.teena@gmail.com"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/button95"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView193"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/ic_mail_black_24dp"
+        android:fontFamily="serif"
+        android:onClick="mail" />
+
+    <TextView
+        android:id="@+id/textView188"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView181"
+        android:layout_below="@+id/textView183"
+        android:layout_marginTop="29dp"
+        android:text="Address:"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView189"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView188"
+        android:layout_alignStart="@+id/textView183"
+        android:text="#204, Mahaveer Konark,"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/textView190"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView189"
+        android:layout_below="@+id/textView188"
+        android:text="Nanjundeswara Layout, JP Nagar Phase 5,"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/textView193"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView190"
+        android:layout_below="@+id/textView190"
+        android:text="Bengaluru - 560078"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/button96"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/editText86"
+        android:layout_alignEnd="@+id/textView190"
+        android:background="@drawable/ic_call_black_24dp"
+        android:fontFamily="serif"
+        android:onClick="btnCall" />
+
+    <TextView
+        android:id="@+id/textView194"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button95"
+        android:layout_centerHorizontal="true"
+        android:text="OR" />
+
+    <EditText
+        android:id="@+id/editText86"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView194"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Enter Phonenumber"
+        android:inputType="phone"
+        android:textAlignment="center"
+        android:textSize="14sp" />
+
+</RelativeLayout>

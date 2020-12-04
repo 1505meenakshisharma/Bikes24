@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainpage"
+    tools:context="com.example.bikes24.EditCustomers">
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="Edit Customer"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView25"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Customer ID"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editText34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView26"
+        android:layout_toEndOf="@+id/textView26"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editText35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText34"
+        android:layout_below="@+id/editText34"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editText36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText35"
+        android:layout_below="@+id/editText35"
+        android:ems="10"
+        android:inputType="phone"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editText37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText36"
+        android:layout_below="@+id/editText36"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editText38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText37"
+        android:layout_below="@+id/editText37"
+        android:ems="10"
+        android:inputType="date"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/button29"
+        style="@android:style/Widget.DeviceDefault.Button.Toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/editText38"
+        android:layout_below="@+id/editText38"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/automobile"
+        android:onClick="update"
+        android:text="update"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/button30"
+        style="@android:style/Widget.DeviceDefault.Light.Button.Toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/editText38"
+        android:layout_alignTop="@+id/button29"
+        android:background="@drawable/automobile"
+        android:onClick="delete"
+        android:text="delete"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/button31"
+        style="@android:style/Widget.DeviceDefault.Light.Button.Toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/button29"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/automobile"
+        android:onClick="cancel"
+        android:text="cancel"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText33"
+        android:layout_toStartOf="@+id/editText33"
+        android:text="Name:" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editText35"
+        android:layout_toStartOf="@+id/editText34"
+        android:text="Address:" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText35"
+        android:layout_toStartOf="@+id/editText35"
+        android:text="Phone:" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText36"
+        android:layout_toStartOf="@+id/editText37"
+        android:text="Email:" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText37"
+        android:layout_toStartOf="@+id/editText37"
+        android:text="DOB:" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editText33"
+        android:layout_toEndOf="@+id/editText33"
+        android:background="@drawable/adminn"
+        android:onClick="search"
+        app:srcCompat="@drawable/ic_search_black" />
+</RelativeLayout>
